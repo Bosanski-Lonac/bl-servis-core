@@ -15,6 +15,6 @@
   		<groupId>com.bosanskilonac</groupId>
   		<artifactId>core</artifactId>
   		<version>${project.version}</version>
- 	</dependency>
+ 	  </dependency>
   </dependencies>
 </project>
