@@ -23,14 +23,14 @@ public class EmailSender {
 		properties.put("mail.smtp.starttls.enable", "true");
 		properties.put("mail.smtp.host", "smtp.gmail.com");
 		properties.put("mail.smtp.port", 587);
+
+		email = "bosanskilonacRN@gmail.com";
 		
 		session=Session.getDefaultInstance(properties, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(email, password);
 			}
 		});
-		
-		email = "bosanskilonacRN@gmail.com";
 	}
 	
 	public void setPassword(String password) {
